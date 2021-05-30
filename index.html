@@ -1,0 +1,69 @@
+HTML PART:
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework week 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/45c5908be1.js" crossorigin="anonymous"> </script>
+
+</head>
+
+<body class="border border-primary">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6">
+                <header>WHEATHER FORECAST</header>
+                </br>
+                <ul>
+                    <li id="big">Milan</li>
+
+                    <li id="current">
+                        Friday 20.05
+                    </li>
+                    <h2> <i class="far fa-sun"></i>
+                        <span id="temperature">9</span>
+                        <span>
+                            <a href="#" id="celsius">°C
+                                <a href="#" id="fahrenheit">°F
+                        </span>
+                    </h2>
+                    <form id="search-form">
+                        <input type="text" placeholder="Enter a city" autofocus id="search-text-input" />
+                        <input type="submit" class="btn btn-primary" value="Search">
+                    </form>
+
+                    <button class="btn btn-primary" id="current-location-button">Current location</button>
+            </div>
+            <div class="col-sm-6">
+                <h4 class="card-title">Monday</h4>
+                <p class="card-text"><i class="far fa-sun"></i> 13°C</p>
+                <h4 class="card-title">Tuesday</h4>
+                <p class="card-text"><i class="fas fa-cloud-sun"></i> 13°C</p>
+                <h4 class="card-title">Wednesday</h4>
+                <p class="card-text"><i class="fas fa-cloud-sun"></i> 14°C</p>
+                <h4 class="card-title">Thursday</h4>
+                <p class="card-text"><i class="fas fa-cloud"></i> 14°C</p>
+                <h4 class="card-title">Friday</h4>
+                <p class="card-text"><i class="fas fa-cloud-rain"></i> 17°C</p>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+</html>
